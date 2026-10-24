@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "hono": "^4.13.13"
+  },
+  "devDependencies": {
+    "wrangler": "^4.35.0"
+  },
+  "allowScripts": {
+    "sharp@0.33.5": true,
+    "workerd@1.20261019.1": true,
+    "esbuild@0.28.2": true
+  },
+  "overrides": {
+    "undici": "7.30.1"
+  }
+}
